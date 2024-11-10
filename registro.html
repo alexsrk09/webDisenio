@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Illo Publisher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/img/OIG3.ico">
+    <style>
+        :root {
+            --primary-bg: #141414;
+            --secondary-bg: #212529;
+            --accent-color: #ff7700;
+            --accent-light: #ffae00;
+            --text-color: #ffffff;
+            --button-bg: #000000;
+            --button-text: #ffffff;
+        }
+
+        body {
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #0a2e42;
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--text-color);
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--accent-color);
+        }
+
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--text-color);
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            color: var(--button-text);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-light);
+            border-color: var(--accent-light);
+        }
+
+        .form-control {
+            background-color: var(--secondary-bg);
+            border-color: var(--accent-color);
+            color: var(--text-color);
+        }
+
+        .form-control:focus {
+            background-color: var(--secondary-bg);
+            border-color: var(--accent-light);
+            color: var(--text-color);
+            box-shadow: 0 0 0 0.25rem rgba(255, 119, 0, 0.25);
+        }
+
+        .form-control::placeholder {
+            color: #999;
+        }
+
+        .form-label {
+            color: var(--text-color);
+        }
+
+        footer {
+            background-color: var(--secondary-bg);
+        }
+
+        .footer-heading {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories">Categorías</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#carousel">Carrusel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#latest-releases">Lanzamientos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">Destacados</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h1 class="text-center mb-4">Registro de Usuario</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Nombre de usuario</label>
+                        <input type="text" class="form-control" id="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirm-password" class="form-label">Confirmar contraseña</label>
+                        <input type="password" class="form-control" id="confirm-password" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="birthdate" class="form-label">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" id="birthdate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="country" class="form-label">País</label>
+                        <select class="form-select" id="country" required>
+                            <option value="">Selecciona un país</option>
+                            <option value="es">España</option>
+                            <option value="mx">México</option>
+                            <option value="ar">Argentina</option>
+                            <option value="co">Colombia</option>
+                            <option value="pe">Perú</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="terms" required>
+                        <label class="form-check-label" for="terms">Acepto los términos y condiciones</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="newsletter">
+                        <label class="form-check-label" for="newsletter">Deseo recibir noticias y ofertas por correo
+                            electrónico</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4 footer-heading">Illo Publisher</h5>
+                    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Illo Illo Publisher</span> by <span property="cc:attributionName">AlexJL</span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4 footer-heading">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Inicio</a></li>
+                        <li><a href="#categories" class="text-white">Categorías</a></li>
+                        <li><a href="#latest-releases" class="text-white">Últimos Lanzamientos</a></li>
+                        <li><a href="#featured-games" class="text-white">Juegos Destacados</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mb-4 footer-heading">Contáctanos</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-3"></i> info@illopublisher.com</li>
+                        <li><i class="fas fa-phone me-3"></i> +34 123 456 789</li>
+                        <li><i class="fas fa-map-marker-alt me-3"></i> Calle Principal, 123, Madrid, España</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
